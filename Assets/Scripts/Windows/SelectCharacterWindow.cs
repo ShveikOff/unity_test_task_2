@@ -4,6 +4,11 @@ public class SelectCharacterWindow : WindowBase
 {
     public override string WindowId => "SelectCharacterWindow";
 
+    private void Start()
+    {
+        Debug.Log("[SelectCharacterWindow] WindowId: " + WindowId);
+    }
+
     public override void Show()
     {
         base.Show();

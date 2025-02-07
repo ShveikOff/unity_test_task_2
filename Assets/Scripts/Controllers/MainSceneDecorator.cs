@@ -8,7 +8,7 @@ public class MainSceneDecorator : WindowDecorator
 
     public override void Show()
     {
-        Debug.Log("MainSceneDecortator: Showing Window " + wrappedWindow.WindowId);
+        Debug.Log("MainSceneDecorator: Showing Window " + wrappedWindow.WindowId);
         base.Show();
     }
 

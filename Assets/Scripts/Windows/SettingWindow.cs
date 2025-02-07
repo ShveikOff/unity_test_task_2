@@ -4,6 +4,11 @@ public class SettingsWindow : WindowBase
 {
     public override string WindowId => "SettingsWindow";
 
+    private void Start()
+    {
+        Debug.Log("[SettingsWindow] WindowId: " + WindowId);
+    }
+
     public override void Show()
     {
         base.Show();

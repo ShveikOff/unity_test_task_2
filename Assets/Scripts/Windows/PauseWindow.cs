@@ -4,6 +4,11 @@ public class PauseWindow : WindowBase
 {
     public override string WindowId => "PauseWindow";
 
+    private void Start()
+    {
+        Debug.Log("[PauseWindow] WindowId: " + WindowId);
+    }
+
     public override void Show()
     {
         base.Show();
