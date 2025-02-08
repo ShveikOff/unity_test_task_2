@@ -13,21 +13,12 @@ public class LoadingWindow : WindowBase
 
     private void Awake()
     {
-        // Пример инициализации сервиса один раз при создании окна
         sceneService = Resources.Load<SceneControllerService>("SceneControllerServiceAsset");
 
         if (sceneService == null)
         {
             Debug.LogError("Не удалось загрузить SceneControllerService.");
         }
-    }
-
-    private void Start()
-    {
-        Debug.Log("[LoadingWindow] WindowId: " + WindowId);
-
-        // Флаг готовности окна
-        isInitialized = true;
     }
 
     private void OnEnable()
@@ -56,19 +47,6 @@ public class LoadingWindow : WindowBase
 
     public void UpdateProgress(float progress)
     {
-        if (!isInitialized)
-        {
-            Debug.LogError("Окно LoadingWindow еще не инициализировано!");
-            return;
-        }
-
-        if (progressBar == null)
-        {
-            Debug.LogError("progressBar не инициализирован!");
-            return;
-        }
-
-        // Обновление прогресса
         progressBar.value = progress;
     }
 

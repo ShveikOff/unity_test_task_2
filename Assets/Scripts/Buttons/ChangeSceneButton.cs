@@ -7,7 +7,6 @@ public class ChangeSceneButton : ButtonHandler
 
     public override void HandleClick()
     {
-        // Извлекаем ID окна из префаба
         WindowBase windowBase = targetWindowPrefab.GetComponent<WindowBase>();
         if (windowBase == null)
         {
@@ -16,7 +15,6 @@ public class ChangeSceneButton : ButtonHandler
         }
         string windowId = windowBase.WindowId;
 
-        // Извлекаем имя сцены из SceneReference
         if (targetSceneReference == null || string.IsNullOrEmpty(targetSceneReference.sceneName))
         {
             Debug.LogError("[ChangeSceneButton] SceneReference не указана или содержит пустое имя.");
@@ -24,7 +22,6 @@ public class ChangeSceneButton : ButtonHandler
         }
         string sceneName = targetSceneReference.sceneName;
 
-        // Загружаем SceneControllerService и запускаем смену сцены
         SceneControllerService sceneService = Resources.Load<SceneControllerService>("SceneControllerServiceAsset");
         if (sceneService != null)
         {

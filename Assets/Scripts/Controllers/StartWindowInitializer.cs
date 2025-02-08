@@ -6,8 +6,7 @@ public class StartWindowInitializer : MonoBehaviour
 
     private void Start()
     {
-        // Находим WindowController в текущей сцене
-        WindowController windowController = FindObjectOfType<WindowController>();
+        WindowController windowController = FindFirstObjectByType<WindowController>();
         if (windowController != null)
         {
             Debug.Log($"[StartWindowInitializer] Открываем стартовое окно с ID: {initialWindowId}");

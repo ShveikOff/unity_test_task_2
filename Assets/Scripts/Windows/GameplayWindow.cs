@@ -4,11 +4,6 @@ public class GameplayWindow : WindowBase
 {
     public override string WindowId => "GameplayWindow";
 
-    private void Start()
-    {
-        Debug.Log("[GameplayWindow] WindowId: " + WindowId);
-    }
-
     public override void Show()
     {
         base.Show();
