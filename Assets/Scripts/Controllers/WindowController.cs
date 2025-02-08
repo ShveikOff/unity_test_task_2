@@ -11,12 +11,6 @@ public class WindowController : MonoBehaviour // Сделал класс MonoBeh
     public event Action<string> OnWindowOpened;
     public event Action<string> OnWindowClosed;
 
-    private void Start()
-    {
-        Debug.Log("[WindowController] Start вызван. Пытаемся открыть окно с id 'MenuWindow'.");
-        OpenWindow("MenuWindow");
-    }
-
     public void OpenWindow(string windowId)
     {
         Debug.Log("[WindowController] OpenWindow вызван с windowId: " + windowId);

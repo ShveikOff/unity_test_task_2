@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 299614842037309948}
   - component: {fileID: 7784170322049401048}
   - component: {fileID: 2565827802084171060}
-  - component: {fileID: 7471040676439962273}
+  - component: {fileID: 4132678509712696290}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -122,8 +122,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7471040676439962273}
-        m_TargetAssemblyTypeName: CloseAllWindowsButton, Assembly-CSharp
+      - m_Target: {fileID: 4132678509712696290}
+        m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: HandleClick
         m_Mode: 1
         m_Arguments:
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7471040676439962273
+--- !u!114 &4132678509712696290
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +143,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 129751117384235950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98399f91cbf9f584e99c331500afea1e, type: 3}
+  m_Script: {fileID: 11500000, guid: ac75bb620040f8740bc88c34c78394a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetWindowPrefab: {fileID: 7602015676384279405, guid: c860142e6edd9b844af0436430a11876, type: 3}
+  targetSceneReference: {fileID: 11400000, guid: 1984af9caa9d54843ad6b328574d45a3, type: 2}
 --- !u!1 &653812577853466046
 GameObject:
   m_ObjectHideFlags: 0

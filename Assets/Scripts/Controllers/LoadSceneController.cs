@@ -25,4 +25,9 @@ public class LoadSceneController
         var command = new LoadSceneCommand(sceneName);
         command.Execute();
     }
+
+    public void ReportProgress(float progress)
+    {
+        OnProgressChanged?.Invoke(progress);
+    }
 }

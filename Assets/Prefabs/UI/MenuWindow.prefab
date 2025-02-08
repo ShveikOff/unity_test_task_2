@@ -1166,7 +1166,7 @@ GameObject:
   - component: {fileID: 963619736488533784}
   - component: {fileID: 1601401629112217755}
   - component: {fileID: 8928097094572668410}
-  - component: {fileID: 8731547511214652735}
+  - component: {fileID: 1839275678733303410}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1276,8 +1276,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8731547511214652735}
-        m_TargetAssemblyTypeName: OpenWindowButton, Assembly-CSharp
+      - m_Target: {fileID: 1839275678733303410}
+        m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
         m_MethodName: HandleClick
         m_Mode: 1
         m_Arguments:
@@ -1288,7 +1288,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8731547511214652735
+--- !u!114 &1839275678733303410
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1297,10 +1297,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8246104376171533388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df19576e125290948ade48bfab0391bb, type: 3}
+  m_Script: {fileID: 11500000, guid: ac75bb620040f8740bc88c34c78394a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowPrefab: {fileID: 1056802457733846292, guid: dc75e9263d974fb4f9e043d5b4cb6ccd, type: 3}
+  targetWindowPrefab: {fileID: 1056802457733846292, guid: dc75e9263d974fb4f9e043d5b4cb6ccd, type: 3}
+  targetSceneReference: {fileID: 11400000, guid: 903e11fa635ca3f4c87f3b9ba8a3edff, type: 2}
 --- !u!1 &9134681867524734057
 GameObject:
   m_ObjectHideFlags: 0
